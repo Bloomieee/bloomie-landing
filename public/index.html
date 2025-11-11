@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bloomie — Skincare with AI</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;7000&display=swap" rel="stylesheet">
+  <!-- Styles -->
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+
+  <!-- ===== Header / Navbar ===== -->
+  <header class="navbar">
+    <div class="container navbar__inner">
+      <a href="#hero" class="brand">
+        <img src="assets/img/logo.png" alt="Bloomie logo" class="brand__logo" />
+        <span class="brand__name">Bloomie</span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <a href="#hero" class="nav__link">Home</a>
+        <a href="#features" class="nav__link">Features</a>
+        <a href="#about" class="nav__link">About Us</a>
+        <a href="#pricing" class="nav__link">Pricing</a>
+        <a href="#contact" class="nav__link">Contact</a>
+      </nav>
+
+      <a href="#login" class="btn btn--primary btn--sm">Log in</a>
+      <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+    </div>
+  </header>
+
+  <!-- ===== Hero ===== -->
+  <section id="hero" class="section hero">
+    <div class="container hero__grid">
+      <div class="hero__copy">
+        <h1 class="h1">Your skincare journey starts here</h1>
+        <p class="lead">
+          Bloomie analyzes your skin, understands your habits,
+          and designs a personalized routine that evolves with you.
+        </p>
+        <a href="#download" class="btn btn--primary btn--lg">Download</a>
+      </div>
+
+      <figure class="hero__media">
+        <img src="assets/img/hero.jpg" alt="Model skincare portrait" />
+      </figure>
+    </div>
+  </section>
+
+  <!-- ===== Features ===== -->
+  <section id="features" class="section section--alt">
+    <div class="container">
+      <h2 class="h2 text-center">Features</h2>
+
+      <div class="features">
+        <article class="feature">
+          <div class="feature__icon" aria-hidden="true"></div>
+          <p class="feature__text">
+            Obtén recomendaciones únicas para tu tipo de piel basadas en IA y hábitos diarios.
+          </p>
+        </article>
+
+        <article class="feature">
+          <div class="feature__icon" aria-hidden="true"></div>
+          <p class="feature__text">
+            Escanea tu piel con la cámara y recibe un diagnóstico visual fácil de entender.
+          </p>
+        </article>
+
+        <article class="feature">
+          <div class="feature__icon" aria-hidden="true"></div>
+          <p class="feature__text">
+            Nunca olvides tu rutina: recordatorios claros de cuándo y cómo aplicar cada producto.
+          </p>
+        </article>
+
+        <article class="feature">
+          <div class="feature__icon" aria-hidden="true"></div>
+          <p class="feature__text">
+            Accede a especialistas y recibe recomendaciones de productos confiables.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== About ===== -->
+  <section id="about" class="section">
+    <div class="container narrow text-center">
+      <h2 class="h2">About Us</h2>
+      <p class="h4">The team behind Bloomie</p>
+      <p class="copy">
+        At Bloomie, we believe that healthy skin builds confidence. That’s why our team of young
+        innovators and skincare enthusiasts work together to create a tool that understands you and
+        helps you shine every day.
+      </p>
+
+      <div class="team">
+        <article class="card team__item">
+          <img src="assets/img/martin.png" alt="Martin Asmat" class="card__media">
+          <div class="card__body">
+            <h3 class="card__title">Martin Asmat</h3>
+            <p class="card__meta">Co-Founder</p>
+          </div>
+        </article>
+
+
+        <article class="card team__item">
+          <img src="assets/img/carla.png" alt="Carla Gallardo" class="card__media">
+          <div class="card__body">
+            <h3 class="card__title">Carla Gallardo</h3>
+            <p class="card__meta">Co-Founder</p>
+          </div>
+        </article>
+
+        <article class="card team__item">
+          <img src="assets/img/luciana.png" alt="Luciana Mechan" class="card__media">
+          <div class="card__body">
+            <h3 class="card__title">Luciana Mechan</h3>
+            <p class="card__meta">Co-Founder</p>
+          </div>
+        </article>
+
+        <article class="card team__item">
+          <img src="assets/img/mario.png" alt="Mario Sejuro" class="card__media">
+          <div class="card__body">
+            <h3 class="card__title">Mario Sejuro</h3>
+            <p class="card__meta">Co-Founder</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Pricing ===== -->
+  <section id="pricing" class="section section--soft">
+    <div class="container">
+      <h2 class="h2 text-center">Pricing</h2>
+
+      <div class="pricing">
+        <article class="price-card">
+          <header class="price-card__head">
+            <h3 class="price-card__plan">Free</h3>
+            <p class="price-card__price">$0</p>
+          </header>
+          <ul class="price-card__list">
+            <li>Basic facial scan with AI</li>
+            <li>Initial personalized routine</li>
+            <li>Product catalog</li>
+            <li>Basic reminders</li>
+            <li>Skincare chatbot access</li>
+          </ul>
+        </article>
+
+        <article class="price-card price-card--favorite">
+          <header class="price-card__head">
+            <h3 class="price-card__plan">Monthly Pro</h3>
+            <p class="price-card__price">$9 <span class="price-card__note">per month</span></p>
+          </header>
+          <ul class="price-card__list">
+            <li>Enhanced facial scan (multi-angle)</li>
+            <li>Advanced routines by budget</li>
+            <li>Detailed reminders</li>
+            <li>Product catalog</li>
+            <li>Chatbot access</li>
+          </ul>
+        </article>
+
+        <article class="price-card">
+          <header class="price-card__head">
+            <h3 class="price-card__plan">Annual Pro</h3>
+            <p class="price-card__price">$89 <span class="price-card__note">per year</span></p>
+          </header>
+          <ul class="price-card__list">
+            <li>Enhanced facial scan (multi-angle)</li>
+            <li>Advanced routines by budget</li>
+            <li>Detailed reminders</li>
+            <li>Product catalog</li>
+            <li>Chatbot access</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Contact ===== -->
+  <section id="contact" class="section section--alt">
+    <div class="container grid-2">
+      <form class="form">
+        <h2 class="h3">Contact</h2>
+
+        <label class="field">
+          <span class="field__label">Contact name</span>
+          <input type="text" class="field__input" placeholder="Your name" />
+        </label>
+
+        <label class="field">
+          <span class="field__label">DNI</span>
+          <input type="text" class="field__input" placeholder="00000000" />
+        </label>
+
+        <div class="grid-2 gap">
+          <label class="field">
+            <span class="field__label">City</span>
+            <input type="text" class="field__input" placeholder="Lima" />
+          </label>
+          <label class="field">
+            <span class="field__label">Postcode</span>
+            <input type="text" class="field__input" placeholder="15000" />
+          </label>
+        </div>
+
+        <label class="field">
+          <span class="field__label">Contact phone</span>
+          <input type="tel" class="field__input" placeholder="+51 900 000 000" />
+        </label>
+
+        <label class="field">
+          <span class="field__label">E-mail</span>
+          <input type="email" class="field__input" placeholder="you@domain.com" />
+        </label>
+
+        <label class="checkbox">
+          <input type="checkbox" />
+          <span>I authorize the processing of my personal data for informational and commercial purposes.</span>
+        </label>
+
+        <button class="btn btn--primary btn--lg" type="submit">Submit</button>
+      </form>
+
+      <figure class="contact__media">
+        <img src="assets/img/contact.jpg" alt="Contact illustration" />
+      </figure>
+    </div>
+  </section>
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a href="#hero" class="brand">
+        <img src="assets/img/logo.png" alt="Bloomie logo" class="brand__logo" />
+        <span class="brand__name">Bloomie</span>
+      </a>
+
+      <nav class="nav nav--inverse" aria-label="Footer">
+        <a href="#features" class="nav__link">Features</a>
+        <a href="#about" class="nav__link">About Us</a>
+        <a href="#pricing" class="nav__link">Pricing</a>
+        <a href="#contact" class="nav__link">Contact</a>
+      </nav>
+
+      <div class="social">
+        <a aria-label="Twitter" href="#" class="social__icon">X</a>
+        <a aria-label="Facebook" href="#" class="social__icon">f</a>
+        <a aria-label="Instagram" href="#" class="social__icon">◎</a>
+        <a aria-label="TikTok" href="#" class="social__icon">♬</a>
+      </div>
+    </div>
+  </footer>
