@@ -359,10 +359,16 @@ a { color: inherit; text-decoration: none; }
 
 
 .footer { background: #333333; color: #ffffff; padding: 36px 0; }
-.footer-inner { display: flex; align-items: center; gap: 16px; }
-.nav-inverse { margin-left: auto; }
+.footer-inner {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 24px;
+}
+.nav.nav-inverse { margin-left: 0; }
+.nav-inverse { justify-self: center; }
 .nav-inverse .nav-link { color: #ffffff; }
-.social { display: flex; gap: 16px; }
+.social { display: flex; gap: 16px; justify-self: end; }
 .social-icon {
   width: 36px; height: 36px; display: grid; place-items: center;
   border-radius: 9999px; border: 1px solid rgba(255,255,255,0.6); color: #ffffff;
