@@ -2851,3 +2851,1086 @@ html { scroll-behavior: smooth; }
 .browse-products-btn:hover {
   background: #8b5a5c;
 }
+
+/* ===== RESPONSIVE STYLES FOR TRENDING/PRODUCTS ===== */
+@media (max-width: 768px) {
+  .trending-container,
+  .product-detail-container,
+  .favorites-container {
+    padding-bottom: 90px;
+  }
+  
+  .trending-header,
+  .product-detail-header,
+  .favorites-header {
+    padding: 15px;
+  }
+  
+  .trending-title,
+  .product-detail-title,
+  .favorites-title {
+    font-size: 16px;
+  }
+  
+  .search-container {
+    padding: 0 15px 10px;
+  }
+  
+  .categories-scroll {
+    padding: 10px 15px 15px;
+    gap: 8px;
+  }
+  
+  .category-btn {
+    padding: 8px 16px;
+    font-size: 12px;
+  }
+  
+  /* Products grid responsive */
+  .products-grid {
+    gap: 10px;
+    padding: 10px;
+  }
+  
+  .product-card {
+    width: calc(50% - 15px);
+    max-width: none;
+  }
+  
+  .product-card:nth-child(1) .product-image { height: 150px; }
+  .product-card:nth-child(2) .product-image { height: 130px; }
+  .product-card:nth-child(3) .product-image { height: 160px; }
+  .product-card:nth-child(4) .product-image { height: 140px; }
+  .product-card:nth-child(5) .product-image { height: 155px; }
+  
+  .product-info {
+    padding: 10px;
+  }
+  
+  .product-brand {
+    font-size: 10px;
+  }
+  
+  .product-name {
+    font-size: 12px;
+  }
+  
+  .favorite-btn {
+    width: 28px;
+    height: 28px;
+  }
+  
+  .favorite-btn i {
+    font-size: 12px;
+  }
+  
+  /* Product detail responsive */
+  .product-detail-image {
+    height: 240px;
+  }
+  
+  .product-detail-content {
+    padding: 20px 15px;
+  }
+  
+  #productName {
+    font-size: 18px;
+  }
+  
+  #productDescription {
+    font-size: 13px;
+  }
+  
+  .compatibility-section,
+  .usage-section {
+    padding: 12px;
+  }
+  
+  .add-to-cart-container {
+    padding: 12px 15px;
+    bottom: 65px;
+  }
+  
+  #addToCartBtn {
+    padding: 14px;
+    font-size: 14px;
+  }
+  
+  /* Favorites grid responsive */
+  .favorites-grid {
+    gap: 10px;
+    padding: 10px;
+  }
+  
+  .favorite-card {
+    width: calc(50% - 15px);
+    max-width: none;
+  }
+  
+  .favorite-card:nth-child(odd) .favorite-image { height: 150px; }
+  .favorite-card:nth-child(even) .favorite-image { height: 130px; }
+  
+  .favorite-info {
+    padding: 10px;
+  }
+  
+  .favorite-brand {
+    font-size: 9px;
+  }
+  
+  .favorite-name {
+    font-size: 11px;
+  }
+  
+  .remove-favorite {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .remove-favorite i {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .trending-container,
+  .product-detail-container,
+  .favorites-container {
+    padding-bottom: 80px;
+  }
+  
+  .trending-header,
+  .product-detail-header,
+  .favorites-header {
+    padding: 12px;
+  }
+  
+  .trending-title,
+  .product-detail-title,
+  .favorites-title {
+    font-size: 15px;
+  }
+  
+  .search-input {
+    padding: 10px 15px;
+    font-size: 13px;
+  }
+  
+  .categories-scroll {
+    padding: 8px 12px 12px;
+  }
+  
+  .category-btn {
+    padding: 6px 12px;
+    font-size: 11px;
+  }
+  
+  /* Products grid small screens */
+  .products-grid {
+    gap: 8px;
+    padding: 8px;
+  }
+  
+  .product-card {
+    width: calc(50% - 12px);
+  }
+  
+  .product-card:nth-child(1) .product-image { height: 130px; }
+  .product-card:nth-child(2) .product-image { height: 115px; }
+  .product-card:nth-child(3) .product-image { height: 140px; }
+  .product-card:nth-child(4) .product-image { height: 120px; }
+  .product-card:nth-child(5) .product-image { height: 135px; }
+  
+  .product-image .ai-badge {
+    padding: 3px 6px;
+    font-size: 9px;
+    top: 6px;
+    left: 6px;
+  }
+  
+  .favorite-btn {
+    width: 26px;
+    height: 26px;
+    top: 6px;
+    right: 6px;
+  }
+  
+  .product-info {
+    padding: 8px;
+  }
+  
+  .product-brand {
+    font-size: 9px;
+  }
+  
+  .product-name {
+    font-size: 11px;
+  }
+  
+  /* Product detail small screens */
+  .product-detail-image {
+    height: 200px;
+  }
+  
+  .product-detail-image img {
+    padding: 15px;
+  }
+  
+  #aiBadge {
+    top: 12px;
+    left: 12px;
+    padding: 6px 12px;
+    font-size: 10px;
+  }
+  
+  .product-detail-content {
+    padding: 15px 12px;
+    border-radius: 20px 20px 0 0;
+  }
+  
+  #productBrand {
+    font-size: 11px;
+  }
+  
+  #productName {
+    font-size: 16px;
+    margin: 6px 0 12px;
+  }
+  
+  #productDescription {
+    font-size: 12px;
+    margin: 0 0 15px;
+  }
+  
+  .compatibility-section,
+  .usage-section {
+    padding: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .compatibility-header span {
+    font-size: 12px;
+  }
+  
+  #compatibilityScore {
+    font-size: 14px;
+  }
+  
+  .benefits-section h4,
+  .usage-section h4 {
+    font-size: 12px;
+  }
+  
+  #benefitsList li {
+    font-size: 11px;
+    padding: 6px 0;
+  }
+  
+  #suggestedUse {
+    font-size: 11px;
+  }
+  
+  .add-to-cart-container {
+    padding: 10px 12px;
+    bottom: 60px;
+  }
+  
+  #addToCartBtn {
+    padding: 12px;
+    font-size: 13px;
+    border-radius: 20px;
+  }
+  
+  /* Favorites small screens */
+  .favorites-grid {
+    gap: 8px;
+    padding: 8px;
+  }
+  
+  .favorite-card {
+    width: calc(50% - 12px);
+  }
+  
+  .favorite-card:nth-child(odd) .favorite-image { height: 130px; }
+  .favorite-card:nth-child(even) .favorite-image { height: 115px; }
+  
+  .favorite-image .ai-badge {
+    padding: 3px 6px;
+    font-size: 9px;
+  }
+  
+  .remove-favorite {
+    width: 22px;
+    height: 22px;
+    top: 6px;
+    right: 6px;
+  }
+  
+  .favorite-info {
+    padding: 8px;
+  }
+  
+  .favorite-brand {
+    font-size: 8px;
+  }
+  
+  .favorite-name {
+    font-size: 10px;
+  }
+  
+  .favorite-compatibility {
+    font-size: 10px;
+  }
+  
+  .empty-favorites {
+    padding: 40px 15px;
+  }
+  
+  .empty-favorites i {
+    font-size: 50px;
+  }
+  
+  .empty-favorites h3 {
+    font-size: 16px;
+  }
+  
+  .empty-favorites p {
+    font-size: 12px;
+  }
+  
+  .browse-products-btn {
+    padding: 10px 20px;
+    font-size: 12px;
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 360px) {
+  .products-grid,
+  .favorites-grid {
+    gap: 6px;
+    padding: 6px;
+  }
+  
+  .product-card,
+  .favorite-card {
+    width: calc(50% - 10px);
+  }
+  
+  .product-card:nth-child(1) .product-image { height: 110px; }
+  .product-card:nth-child(2) .product-image { height: 100px; }
+  .product-card:nth-child(3) .product-image { height: 120px; }
+  .product-card:nth-child(4) .product-image { height: 105px; }
+  .product-card:nth-child(5) .product-image { height: 115px; }
+  
+  .favorite-card:nth-child(odd) .favorite-image { height: 110px; }
+  .favorite-card:nth-child(even) .favorite-image { height: 100px; }
+  
+  .product-info,
+  .favorite-info {
+    padding: 6px;
+  }
+  
+  .product-name,
+  .favorite-name {
+    font-size: 10px;
+    -webkit-line-clamp: 1;
+  }
+  
+  .product-brand,
+  .favorite-brand {
+    font-size: 8px;
+  }
+}
+
+/* ===== PROFILE PAGE STYLES ===== */
+.profile-container {
+  min-height: 100vh;
+  background: #fdf8f8;
+  font-family: "Montserrat", Arial, sans-serif;
+  padding-bottom: 80px;
+}
+
+.profile-header {
+  background: var(--brand-color);
+  padding: 20px;
+  text-align: center;
+}
+
+.profile-title {
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.profile-card {
+  background: var(--brand-color);
+  padding: 0 20px 30px;
+  border-radius: 0 0 30px 30px;
+}
+
+.profile-avatar-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-avatar {
+  width: 100px;
+  height: 100px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid rgba(255, 255, 255, 0.5);
+}
+
+.profile-avatar i {
+  font-size: 45px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.profile-name {
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 15px 0 5px;
+}
+
+.profile-email {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 14px;
+  margin: 0;
+}
+
+.profile-section {
+  background: white;
+  margin: 20px 15px;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.section-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-color);
+  margin: 0 0 15px;
+}
+
+.profile-info-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  padding: 12px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.profile-info-item:last-child {
+  border-bottom: none;
+}
+
+.info-icon {
+  width: 40px;
+  height: 40px;
+  background: rgba(162, 103, 105, 0.1);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.info-icon i {
+  color: var(--brand-color);
+  font-size: 16px;
+}
+
+.info-content {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.info-label {
+  font-size: 12px;
+  color: #888;
+}
+
+.info-value {
+  font-size: 14px;
+  color: var(--text-color);
+  font-weight: 500;
+}
+
+.profile-menu {
+  margin: 0 15px;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: white;
+  padding: 16px;
+  margin-bottom: 10px;
+  border-radius: 12px;
+  text-decoration: none;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease;
+}
+
+.menu-item:hover {
+  transform: translateX(5px);
+}
+
+.menu-icon {
+  width: 44px;
+  height: 44px;
+  background: rgba(162, 103, 105, 0.1);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-icon i {
+  color: var(--brand-color);
+  font-size: 18px;
+}
+
+.menu-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.menu-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+.menu-subtitle {
+  font-size: 12px;
+  color: #888;
+}
+
+.menu-arrow {
+  color: #ccc;
+  font-size: 14px;
+}
+
+.logout-item .logout-icon {
+  background: rgba(231, 76, 60, 0.1);
+}
+
+.logout-item .logout-icon i {
+  color: #e74c3c;
+}
+
+.logout-item .logout-text {
+  color: #e74c3c;
+}
+
+/* ===== PROFILE EDIT PAGE STYLES ===== */
+.profile-edit-container {
+  min-height: 100vh;
+  background: #fdf8f8;
+  font-family: "Montserrat", Arial, sans-serif;
+  padding-bottom: 80px;
+}
+
+.profile-edit-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background: white;
+  border-bottom: 1px solid #eee;
+}
+
+.profile-edit-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-color);
+  margin: 0;
+}
+
+.header-spacer {
+  width: 40px;
+}
+
+.edit-avatar-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 20px;
+  background: white;
+}
+
+.edit-avatar {
+  width: 100px;
+  height: 100px;
+  background: rgba(162, 103, 105, 0.15);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid rgba(162, 103, 105, 0.3);
+}
+
+.edit-avatar i {
+  font-size: 45px;
+  color: var(--brand-color);
+}
+
+.change-photo-btn {
+  margin-top: 15px;
+  background: none;
+  border: none;
+  color: var(--brand-color);
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: inherit;
+}
+
+.change-photo-btn:hover {
+  text-decoration: underline;
+}
+
+.profile-edit-form {
+  padding: 20px;
+  background: white;
+  margin-top: 15px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-label {
+  display: block;
+  font-size: 13px;
+  font-weight: 500;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  font-size: 15px;
+  font-family: inherit;
+  color: var(--text-color);
+  background: #fafafa;
+  transition: border-color 0.2s ease, background 0.2s ease;
+  box-sizing: border-box;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: var(--brand-color);
+  background: white;
+}
+
+.form-input::placeholder {
+  color: #aaa;
+}
+
+.form-select {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23666' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+  padding-right: 40px;
+  cursor: pointer;
+}
+
+.form-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 30px;
+  padding-bottom: 20px;
+}
+
+.btn-cancel {
+  flex: 1;
+  padding: 14px;
+  background: #f0f0f0;
+  border: none;
+  border-radius: 25px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #666;
+  cursor: pointer;
+  font-family: inherit;
+  transition: background 0.2s ease;
+}
+
+.btn-cancel:hover {
+  background: #e0e0e0;
+}
+
+.btn-save {
+  flex: 1;
+  padding: 14px;
+  background: var(--brand-color);
+  border: none;
+  border-radius: 25px;
+  font-size: 15px;
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+  font-family: inherit;
+  transition: background 0.2s ease;
+}
+
+.btn-save:hover {
+  background: #8b5a5c;
+}
+
+/* ===== NOTIFICATIONS PAGE STYLES ===== */
+.notifications-container {
+  min-height: 100vh;
+  background: #fdf8f8;
+  font-family: "Montserrat", Arial, sans-serif;
+  padding-bottom: 80px;
+}
+
+.notifications-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background: var(--brand-color);
+}
+
+.notifications-header .back-btn {
+  color: white;
+}
+
+.notifications-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  margin: 0;
+}
+
+.notification-options {
+  background: white;
+  margin: 20px 15px;
+  border-radius: 16px;
+  padding: 10px 0;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.notification-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  border-bottom: 1px solid #f5f5f5;
+}
+
+.notification-item:last-child {
+  border-bottom: none;
+}
+
+.notification-info {
+  flex: 1;
+  padding-right: 15px;
+}
+
+.notification-name {
+  display: block;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--text-color);
+  margin-bottom: 4px;
+}
+
+.notification-desc {
+  display: block;
+  font-size: 12px;
+  color: #888;
+}
+
+/* Toggle Switch */
+.toggle-switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 28px;
+}
+
+.toggle-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.toggle-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.3s;
+  border-radius: 28px;
+}
+
+.toggle-slider:before {
+  position: absolute;
+  content: "";
+  height: 22px;
+  width: 22px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: 0.3s;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.toggle-switch input:checked + .toggle-slider {
+  background-color: var(--brand-color);
+}
+
+.toggle-switch input:checked + .toggle-slider:before {
+  transform: translateX(22px);
+}
+
+.reminder-time-group {
+  padding: 0 20px 16px;
+  border-bottom: 1px solid #f5f5f5;
+}
+
+.reminder-time-group .form-label {
+  margin-bottom: 10px;
+}
+
+.reminder-time-group .form-input {
+  background: #f8f8f8;
+}
+
+.notification-actions {
+  padding: 20px 15px;
+}
+
+.notification-actions .btn-save {
+  width: 100%;
+}
+
+/* ===== PROFILE RESPONSIVE STYLES ===== */
+@media (max-width: 768px) {
+  .profile-card {
+    padding: 0 15px 25px;
+  }
+  
+  .profile-avatar {
+    width: 90px;
+    height: 90px;
+  }
+  
+  .profile-avatar i {
+    font-size: 40px;
+  }
+  
+  .profile-name {
+    font-size: 18px;
+  }
+  
+  .profile-section {
+    margin: 15px 12px;
+    padding: 15px;
+  }
+  
+  .profile-menu {
+    margin: 0 12px;
+  }
+  
+  .menu-item {
+    padding: 14px;
+  }
+  
+  .menu-icon {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .menu-title {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-header {
+    padding: 15px;
+  }
+  
+  .profile-title {
+    font-size: 16px;
+  }
+  
+  .profile-avatar {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .profile-avatar i {
+    font-size: 35px;
+  }
+  
+  .profile-name {
+    font-size: 16px;
+  }
+  
+  .profile-email {
+    font-size: 13px;
+  }
+  
+  .profile-section {
+    margin: 12px 10px;
+    padding: 12px;
+  }
+  
+  .section-title {
+    font-size: 14px;
+  }
+  
+  .info-icon {
+    width: 36px;
+    height: 36px;
+  }
+  
+  .info-value {
+    font-size: 13px;
+  }
+  
+  .profile-menu {
+    margin: 0 10px;
+  }
+  
+  .menu-item {
+    padding: 12px;
+    gap: 12px;
+  }
+  
+  .menu-icon {
+    width: 38px;
+    height: 38px;
+  }
+  
+  .menu-icon i {
+    font-size: 16px;
+  }
+  
+  .menu-title {
+    font-size: 13px;
+  }
+  
+  .menu-subtitle {
+    font-size: 11px;
+  }
+  
+  /* Edit profile responsive */
+  .profile-edit-header,
+  .notifications-header {
+    padding: 15px;
+  }
+  
+  .profile-edit-title,
+  .notifications-title {
+    font-size: 16px;
+  }
+  
+  .edit-avatar-section {
+    padding: 25px 15px;
+  }
+  
+  .edit-avatar {
+    width: 90px;
+    height: 90px;
+  }
+  
+  .edit-avatar i {
+    font-size: 40px;
+  }
+  
+  .change-photo-btn {
+    font-size: 13px;
+  }
+  
+  .profile-edit-form {
+    padding: 15px;
+  }
+  
+  .form-label {
+    font-size: 12px;
+  }
+  
+  .form-input {
+    padding: 12px 14px;
+    font-size: 14px;
+  }
+  
+  .form-actions {
+    gap: 10px;
+  }
+  
+  .btn-cancel,
+  .btn-save {
+    padding: 12px;
+    font-size: 14px;
+  }
+  
+  /* Notifications responsive */
+  .notification-options {
+    margin: 15px 10px;
+  }
+  
+  .notification-item {
+    padding: 14px 15px;
+  }
+  
+  .notification-name {
+    font-size: 14px;
+  }
+  
+  .notification-desc {
+    font-size: 11px;
+  }
+  
+  .toggle-switch {
+    width: 44px;
+    height: 24px;
+  }
+  
+  .toggle-slider:before {
+    height: 18px;
+    width: 18px;
+  }
+  
+  .toggle-switch input:checked + .toggle-slider:before {
+    transform: translateX(20px);
+  }
+  
+  .reminder-time-group {
+    padding: 0 15px 14px;
+  }
+  
+  .notification-actions {
+    padding: 15px 10px;
+  }
+}

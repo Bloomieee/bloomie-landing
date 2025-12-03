@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Profile - Bloomie</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles/styles.css" />
+</head>
+<body>
+  <div class="profile-container">
+    <!-- Header -->
+    <div class="profile-header">
+      <h1 class="profile-title">My profile</h1>
+    </div>
+    
+    <!-- Profile Card -->
+    <div class="profile-card">
+      <div class="profile-avatar-section">
+        <div class="profile-avatar">
+          <i class="fas fa-user"></i>
+        </div>
+        <h2 class="profile-name" id="profileName">Sarah Johnson</h2>
+        <p class="profile-email" id="profileEmail">sarah.johnson@email.com</p>
+      </div>
+    </div>
+    
+    <!-- Contact Information -->
+    <div class="profile-section">
+      <h3 class="section-title">Contact information</h3>
+      
+      <div class="profile-info-item">
+        <div class="info-icon">
+          <i class="fas fa-envelope"></i>
+        </div>
+        <div class="info-content">
+          <span class="info-label">Email</span>
+          <span class="info-value" id="infoEmail">sarah.johnson@email.com</span>
+        </div>
+      </div>
+      
+      <div class="profile-info-item">
+        <div class="info-icon">
+          <i class="fas fa-phone"></i>
+        </div>
+        <div class="info-content">
+          <span class="info-label">Phone</span>
+          <span class="info-value" id="infoPhone">+52 55 1234 5678</span>
+        </div>
+      </div>
+      
+      <div class="profile-info-item">
+        <div class="info-icon">
+          <i class="fas fa-map-marker-alt"></i>
+        </div>
+        <div class="info-content">
+          <span class="info-label">Address</span>
+          <span class="info-value" id="infoAddress">Mexico City, CDMX</span>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Menu Options -->
+    <div class="profile-menu">
+      <a href="profile-edit.html" class="menu-item">
+        <div class="menu-icon">
+          <i class="fas fa-user-edit"></i>
+        </div>
+        <div class="menu-content">
+          <span class="menu-title">Edit profile</span>
+          <span class="menu-subtitle">Update your personal information</span>
+        </div>
+        <i class="fas fa-chevron-right menu-arrow"></i>
+      </a>
+      
+      <a href="notifications.html" class="menu-item">
+        <div class="menu-icon">
+          <i class="fas fa-bell"></i>
+        </div>
+        <div class="menu-content">
+          <span class="menu-title">Notifications</span>
+          <span class="menu-subtitle">Manage notification preferences</span>
+        </div>
+        <i class="fas fa-chevron-right menu-arrow"></i>
+      </a>
+      
+      <a href="#" class="menu-item">
+        <div class="menu-icon">
+          <i class="fas fa-cog"></i>
+        </div>
+        <div class="menu-content">
+          <span class="menu-title">General settings</span>
+          <span class="menu-subtitle">Language & more</span>
+        </div>
+        <i class="fas fa-chevron-right menu-arrow"></i>
+      </a>
+      
+      <a href="#" class="menu-item">
+        <div class="menu-icon">
+          <i class="fas fa-question-circle"></i>
+        </div>
+        <div class="menu-content">
+          <span class="menu-title">Help & support</span>
+          <span class="menu-subtitle">FAQs and contact us</span>
+        </div>
+        <i class="fas fa-chevron-right menu-arrow"></i>
+      </a>
+      
+      <a href="#" class="menu-item logout-item" id="logoutBtn">
+        <div class="menu-icon logout-icon">
+          <i class="fas fa-sign-out-alt"></i>
+        </div>
+        <div class="menu-content">
+          <span class="menu-title logout-text">Log out</span>
+          <span class="menu-subtitle">Sign out from your account</span>
+        </div>
+        <i class="fas fa-chevron-right menu-arrow"></i>
+      </a>
+    </div>
+
+    <!-- Bottom Navigation -->
+    <nav class="bottom-nav">
+      <a href="dashboard.html" class="nav-item">
+        <i class="fas fa-home"></i>
+        <span>Home</span>
+      </a>
+      <a href="consult.html" class="nav-item">
+        <i class="fas fa-comment-alt"></i>
+        <span>Consult</span>
+      </a>
+      <a href="rutina.html" class="nav-item">
+        <i class="fas fa-hand-holding-water"></i>
+        <span>Skin care</span>
+      </a>
+      <a href="profile.html" class="nav-item active">
+        <i class="fas fa-user"></i>
+        <span>Profile</span>
+      </a>
+    </nav>
+  </div>
+  
+  <script src="assets/scripts/profile.js"></script>
+</body>
+</html>
