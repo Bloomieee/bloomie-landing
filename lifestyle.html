@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lifestyle Questions - Bloomie</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles/styles.css" />
+</head>
+<body>
+  <div class="lifestyle-container">
+    <div class="lifestyle-header">
+      <button class="back-btn" onclick="window.history.back()">
+        <i class="fas fa-arrow-left"></i>
+      </button>
+      <h1 class="lifestyle-title">Lifestyle Questions</h1>
+      <div class="step-indicator">
+        <span class="step-number">3</span>
+      </div>
+    </div>
+    
+    <div class="lifestyle-form-container">
+      <p class="lifestyle-subtitle">Which one best type describes?</p>
+      
+      <form id="lifestyleForm" class="lifestyle-form">
+        <div class="question-group">
+          <label class="question-label">How much water do you drink daily?</label>
+          <select name="water" class="lifestyle-select" required>
+            <option value="">Select...</option>
+            <option value="less1">Less than 1L</option>
+            <option value="1-2">1-2L</option>
+            <option value="2plus">More than 2L</option>
+          </select>
+        </div>
+        
+        <div class="question-group">
+          <label class="question-label">How many hours of sleep do you get?</label>
+          <select name="sleep" class="lifestyle-select" required>
+            <option value="">Select...</option>
+            <option value="less6">Less than 6h</option>
+            <option value="6-8">6-8h</option>
+            <option value="8plus">More than 8h</option>
+          </select>
+        </div>
+        
+        <div class="question-group">
+          <label class="question-label">How much sun exposure do you have?</label>
+          <select name="sun" class="lifestyle-select" required>
+            <option value="">Select...</option>
+            <option value="low">Low</option>
+            <option value="medium">Medium</option>
+            <option value="high">High</option>
+          </select>
+        </div>
+        
+        <div class="question-group">
+          <label class="question-label">Skin type (optional)</label>
+          <select name="skin" class="lifestyle-select">
+            <option value="">Not sure</option>
+            <option value="normal">Normal</option>
+            <option value="dry">Dry</option>
+            <option value="oily">Oily</option>
+            <option value="combination">Combination</option>
+          </select>
+          <a href="#" id="skinHelp" class="help-link">
+            <i class="fas fa-question-circle"></i> Not sure about your skin type?
+          </a>
+        </div>
+        
+        <button type="submit" class="lifestyle-submit-btn">Continue</button>
+      </form>
+    </div>
+    
+    <div id="skinModal" class="lifestyle-modal" style="display:none;">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3>Skin Type Guide</h3>
+          <button id="closeModal" class="close-btn">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img src="assets/images/skin-type.jpg" alt="Skin types infographic" style="max-width:100%;">
+          <p>Examples and characteristics of normal, dry, oily, and combination skin.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script src="assets/scripts/lifestyle.js"></script>
+</body>
+</html>

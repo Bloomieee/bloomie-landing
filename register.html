@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register - Bloomie</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles/styles.css" />
+</head>
+<body>
+  <div class="register-container">
+    <div class="register-header">
+      <button class="back-btn" onclick="window.history.back()">
+        <i class="fas fa-arrow-left"></i>
+      </button>
+      <div class="register-logo">
+        <img src="assets/images/logo-msize.png" alt="Bloomie logo">
+        <span>Bloomie</span>
+      </div>
+
+    </div>
+    
+    <div class="register-form-container">
+      <h1 class="register-title">Sign Up</h1>
+      
+      <form id="registerForm" class="register-form">
+        <div class="form-group">
+          <label for="regEmail">Email</label>
+          <input type="email" id="regEmail" name="email" placeholder="Enter your email address" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="regPassword">Password</label>
+          <input type="password" id="regPassword" name="password" placeholder="Enter your password" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="regFirstName">Name</label>
+          <input type="text" id="regFirstName" name="firstName" placeholder="First" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="regLastName">Last Name</label>
+          <input type="text" id="regLastName" name="lastName" placeholder="Last" required>
+        </div>
+        
+        <div class="checkbox-group">
+          <label class="checkbox-label">
+            <input type="checkbox" id="rememberMe" name="rememberMe">
+            <span class="checkmark"></span>
+            Remember me
+          </label>
+        </div>
+        
+        <div class="social-login">
+          <button type="button" class="social-btn google-btn">
+            <i class="fab fa-google"></i>
+          </button>
+          <button type="button" class="social-btn facebook-btn">
+            <i class="fab fa-facebook-f"></i>
+          </button>
+          <button type="button" class="social-btn apple-btn">
+            <i class="fab fa-apple"></i>
+          </button>
+        </div>
+        
+        <button type="submit" class="register-submit-btn">Next</button>
+      </form>
+      
+      <div id="registerSuccess" class="success-message" style="display:none;">Registration successful! Redirecting...</div>
+    </div>
+  </div>
+  
+  <script src="assets/scripts/register.js"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Face Scan - Bloomie</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles/styles.css" />
+</head>
+<body>
+  <div class="scan-container">
+    <div class="scan-header">
+      <button class="back-btn" onclick="window.history.back()">
+        <i class="fas fa-arrow-left"></i>
+      </button>
+      <h1 class="scan-title">Prepare for your skin scan</h1>
+      <div class="scan-avatar">
+        <img src="https://images.unsplash.com/photo-1494790108755-2616b332c1d2?w=35&h=35&fit=crop&crop=face&q=80" alt="User avatar">
+      </div>
+    </div>
+    
+    <div class="scan-content" id="scanContent">
+      <!-- Prepare Screen -->
+      <div class="scan-screen prepare-screen" id="prepareScreen">
+        <div class="face-preview">
+          <img src="assets/images/face-preview.png" alt="Face preview" id="faceImage">
+        </div>
+        
+        <div class="scan-instructions">
+          <p>• Make sure your face is well lit</p>
+          <p>• Remove accessories covering your face</p>
+          <p>• Keep your face centered in the frame</p>
+        </div>
+        
+        <button class="scan-btn" id="startScanBtn">Start Scan</button>
+      </div>
+      
+      <!-- Scanning Screen -->
+      <div class="scan-screen scanning-screen" id="scanningScreen" style="display:none;">
+        <div class="scanning-circle">
+          <div class="face-outline">
+            <img src="assets/images/face-scanning.png" alt="Face scanning" id="scanningFace">
+          </div>
+          <div class="scan-progress"></div>
+        </div>
+        
+        <div class="scan-status">
+          <p>Move your head slowly to complete the circle</p>
+        </div>
+        
+        <button class="scan-btn" id="continueBtn" style="display:none;">Continue</button>
+      </div>
+    </div>
+  </div>
+  
+  <script src="assets/scripts/scan.js"></script>
+</body>
+</html>
