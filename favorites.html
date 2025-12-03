@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Favorites - Bloomie</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles/styles.css" />
+</head>
+<body>
+  <div class="favorites-container">
+    <!-- Header -->
+    <div class="favorites-header">
+      <button class="back-btn" onclick="window.history.back()">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+      <h1 class="favorites-title">My Favorites</h1>
+      <span class="favorites-count" id="favoritesCount">0</span>
+    </div>
+
+    <!-- Favorites Grid -->
+    <div class="favorites-grid" id="favoritesGrid">
+      <!-- Favorites will be loaded dynamically -->
+    </div>
+    
+    <!-- Empty State -->
+    <div class="empty-favorites" id="emptyState" style="display: none;">
+      <i class="far fa-heart"></i>
+      <h3>No favorites yet</h3>
+      <p>Start adding products you love by tapping the heart icon</p>
+      <button class="browse-products-btn" onclick="window.location.href='trending.html'">Browse Products</button>
+    </div>
+
+    <!-- Bottom Navigation -->
+    <nav class="bottom-nav">
+      <a href="dashboard.html" class="nav-item">
+        <i class="fas fa-home"></i>
+        <span>Home</span>
+      </a>
+      <a href="consult.html" class="nav-item">
+        <i class="fas fa-comment-alt"></i>
+        <span>Consult</span>
+      </a>
+      <a href="rutina.html" class="nav-item">
+        <i class="fas fa-hand-holding-water"></i>
+        <span>Skin care</span>
+      </a>
+      <a href="profile.html" class="nav-item">
+        <i class="fas fa-user"></i>
+        <span>Profile</span>
+      </a>
+    </nav>
+  </div>
+
+  <script src="assets/scripts/favorites.js"></script>
+</body>
+</html>

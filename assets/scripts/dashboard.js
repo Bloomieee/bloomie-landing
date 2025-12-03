@@ -23,24 +23,24 @@ function updateUserGreeting(userData) {
     
     if (greetingEl) {
         const hour = new Date().getHours();
-        let greeting = 'Buenas tardes';
+        let greeting = 'Good afternoon';
         
         if (hour < 12) {
-            greeting = 'Buenos días';
+            greeting = 'Good morning';
         } else if (hour >= 18) {
-            greeting = 'Buenas noches';
+            greeting = 'Good evening';
         }
         
-        greetingEl.textContent = `${greeting}, ${userData.firstName || userData.name || 'Usuario'}`;
+        greetingEl.textContent = `${greeting}, ${userData.firstName || userData.name || 'User'}`;
     }
     
     if (subgreetingEl) {
-        subgreetingEl.textContent = 'Tu rutina personalizada está lista';
+        subgreetingEl.textContent = 'Your personalized routine is ready';
     }
     
     if (avatarEl) {
-        // Use a realistic avatar instead of placeholder
-        avatarEl.src = userData.avatar || 'https://images.unsplash.com/photo-1494790108755-2616b332c1d2?w=40&h=40&fit=crop&crop=face&q=80';
+        // Use the Bloomie logo
+        avatarEl.src = 'assets/images/logo-msize.png';
     }
 }
 
@@ -74,11 +74,11 @@ function initializeDashboard() {
 }
 
 function showNotifications() {
-    alert('Notificaciones:\n\n• Tu rutina de noche está lista\n• Recordatorio: Aplicar protector solar\n• Nueva recomendación de productos');
+    alert('Notifications:\n\n• Your night routine is ready\n• Reminder: Apply sunscreen\n• New product recommendation');
 }
 
 function showSettings() {
-    alert('Configuraciones:\n\n• Perfil de usuario\n• Notificaciones\n• Privacidad\n• Cerrar sesión');
+    alert('Settings:\n\n• User Profile\n• Notifications\n• Privacy\n• Log out');
 }
 
 function startScanning() {
@@ -92,7 +92,7 @@ function initializeProgressChart() {
         progressChart.innerHTML = `
             <div style="text-align: center; color: #666;">
                 <i class="fas fa-chart-line" style="font-size: 24px; margin-bottom: 10px;"></i>
-                <p style="margin: 0; font-size: 12px;">Progreso esta semana</p>
+                <p style="margin: 0; font-size: 12px;">Progress this week</p>
                 <p style="margin: 5px 0 0; font-size: 16px; font-weight: 600; color: #333;">85%</p>
             </div>
         `;
@@ -128,9 +128,9 @@ function checkScanStatus() {
         
         if (scanCardContent) {
             scanCardContent.innerHTML = `
-                <h3>Análisis Completado</h3>
-                <p>Tu rutina personalizada está lista</p>
-                <button class="get-started-btn" onclick="window.location.href='rutina.html'">Ver Rutina</button>
+                <h3>Analysis Complete</h3>
+                <p>Your personalized routine is ready</p>
+                <button class="get-started-btn" onclick="window.location.href='rutina.html'">View Routine</button>
             `;
         }
     }
