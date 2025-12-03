@@ -1,5 +1,29 @@
 // JS animations for features screenshots
 document.addEventListener('DOMContentLoaded', function() {
+  // Navbar mobile toggle functionality
+  var navToggle = document.querySelector('.nav-toggle');
+  var nav = document.querySelector('.nav');
+  var body = document.body;
+  if (navToggle && nav) {
+    navToggle.addEventListener('click', function () {
+      body.classList.toggle('menu-open');
+      nav.classList.toggle('nav-open', body.classList.contains('menu-open'));
+    });
+    // Close menu when clicking outside
+    document.addEventListener('click', function (e) {
+      if (body.classList.contains('menu-open') && !nav.contains(e.target) && e.target !== navToggle) {
+        body.classList.remove('menu-open');
+        nav.classList.remove('nav-open');
+      }
+    });
+    // Close menu on resize
+    window.addEventListener('resize', function () {
+      if (window.innerWidth > 768) {
+        body.classList.remove('menu-open');
+        nav.classList.remove('nav-open');
+      }
+    });
+  }
   const screenshots = document.querySelectorAll('.features-screenshots figure');
 
   if (screenshots.length && 'IntersectionObserver' in window) {
