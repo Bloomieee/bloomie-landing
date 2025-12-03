@@ -26,8 +26,8 @@ function updateUserInfo(userData) {
     const avatarEl = document.querySelector('.routine-avatar img');
     
     if (avatarEl) {
-        // Use a realistic avatar instead of placeholder
-        avatarEl.src = userData.avatar || 'https://images.unsplash.com/photo-1494790108755-2616b332c1d2?w=35&h=35&fit=crop&crop=face&q=80';
+        // Use the Bloomie logo
+        avatarEl.src = 'assets/images/logo-msize.png';
     }
 }
 
@@ -86,14 +86,14 @@ function getStepDetails(step) {
     const stepTitle = step.querySelector('.step-info h4').textContent;
     
     const detailsMap = {
-        'Limpiador Espumoso': 'Aplica sobre el rostro húmedo con movimientos circulares suaves. Masajea durante 30 segundos y enjuaga con agua tibia. Este limpiador ayuda a remover impurezas y exceso de grasa sin resecar la piel.',
-        'Serum Hidratante': 'Aplica 2-3 gotas sobre la piel limpia y seca. Masajea suavemente hasta que se absorba completamente. El serum proporciona hidratación profunda y nutrientes esenciales para la piel.',
-        'Crema Hidratante': 'Aplica una cantidad del tamaño de una arveja sobre rostro y cuello. Masajea con movimientos ascendentes hasta absorción completa. Proporciona hidratación duradera y protección.',
-        'Protector Solar': 'Aplica generosamente 15 minutos antes de la exposición solar. Reaplicar cada 2 horas o después de nadar/sudar. SPF 30+ es esencial para proteger contra rayos UV.',
-        'Tónico Facial': 'Aplica con un algodón o directamente en las manos. Presiona suavemente sobre la piel limpia. Ayuda a equilibrar el pH y prepara la piel para los siguientes pasos.'
+        'La Roche-Posay Toleriane Hydrating Gentle Face Cleanser': 'Apply to wet face with gentle circular motions. Massage for 30 seconds and rinse with lukewarm water. This cleanser helps remove impurities and excess oil without drying the skin.',
+        'The Ordinary Niacinamide 10% + Zinc 1%': 'Apply 2-3 drops on clean, dry skin. Massage gently until fully absorbed. This serum provides deep hydration and essential nutrients for your skin.',
+        'Bioderma Hydrabio Moisturizing Serum': 'Apply a pea-sized amount on face and neck. Massage with upward motions until fully absorbed. Provides long-lasting hydration and protection.',
+        'Sunscreen': 'Apply generously 15 minutes before sun exposure. Reapply every 2 hours or after swimming/sweating. SPF 30+ is essential for UV protection.',
+        'Toner': 'Apply with cotton pad or directly on hands. Press gently on clean skin. Helps balance pH and prepares skin for next steps.'
     };
     
-    return detailsMap[stepTitle] || 'Sigue las instrucciones del producto para mejores resultados.';
+    return detailsMap[stepTitle] || 'Follow product instructions for best results.';
 }
 
 function initializeRoutine() {

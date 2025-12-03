@@ -171,8 +171,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 // Store user session (in real app, this would be handled by backend)
                 const userData = {
                     email: user.email,
-                    firstName: user.firstName || 'Usuario',
-                    name: user.firstName || 'Usuario',
+                    firstName: user.firstName || 'User',
+                    name: user.firstName || 'User',
                     loginTime: new Date().toISOString()
                 };
                 localStorage.setItem('bloomie_user', JSON.stringify(userData));
@@ -196,8 +196,8 @@ document.addEventListener('DOMContentLoaded', function() {
             alert('Google login would be implemented here. For demo purposes, this logs you in as demo@example.com');
             const userData = {
                 email: 'demo@example.com',
-                firstName: 'Usuario',
-                name: 'Usuario',
+                firstName: 'User',
+                name: 'User',
                 loginTime: new Date().toISOString(),
                 provider: 'google'
             };
@@ -212,8 +212,8 @@ document.addEventListener('DOMContentLoaded', function() {
             alert('Facebook login would be implemented here. For demo purposes, this logs you in as demo@example.com');
             const userData = {
                 email: 'demo@example.com',
-                firstName: 'Usuario',
-                name: 'Usuario',
+                firstName: 'User',
+                name: 'User',
                 loginTime: new Date().toISOString(),
                 provider: 'facebook'
             };

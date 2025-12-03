@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consulta - Bloomie</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles/styles.css" />
+</head>
+<body>
+  <div class="chat-container">
+    <!-- Chat Header -->
+    <div class="chat-header">
+      <button class="back-btn" onclick="window.location.href='dashboard.html'">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+      <h1 class="chat-title">Ask me anything!</h1>
+      <div class="chat-bot-icon">
+        <img src="https://api.dicebear.com/7.x/bottts/svg?seed=bloomie&backgroundColor=ffffff" alt="Bot">
+      </div>
+    </div>
+
+    <!-- Chat Messages -->
+    <div class="chat-messages" id="chatMessages">
+      <!-- Bot intro -->
+      <div class="chat-bot-intro">
+        <div class="bot-avatar">
+          <img src="https://api.dicebear.com/7.x/bottts/svg?seed=bloomie&backgroundColor=ffffff" alt="Bot">
+        </div>
+        <p class="faq-label">Frequently Ask Questions</p>
+      </div>
+
+      <!-- FAQ Suggestions -->
+      <div class="faq-suggestions" id="faqSuggestions">
+        <button class="faq-btn" data-question="Which product is suitable for my face?">
+          Which product is suitable for my face?
+        </button>
+        <button class="faq-btn" data-question="How to know if I need treatment?">
+          How to know if I need treatment?
+        </button>
+        <button class="faq-btn" data-question="Where can I find the best dermatologic product?">
+          Where can I find the best dermatologic product?
+        </button>
+      </div>
+
+      <!-- Messages will be added here dynamically -->
+    </div>
+
+    <!-- Chat Input -->
+    <div class="chat-input-container">
+      <input type="text" id="chatInput" class="chat-input" placeholder="Write something here...">
+      <button class="chat-send-btn" id="sendBtn">
+        <i class="fas fa-arrow-right"></i>
+      </button>
+    </div>
+
+    <!-- Bottom Navigation -->
+    <nav class="bottom-nav">
+      <a href="dashboard.html" class="nav-item">
+        <i class="fas fa-home"></i>
+        <span>Home</span>
+      </a>
+      <a href="consult.html" class="nav-item active">
+        <i class="fas fa-comment-alt"></i>
+        <span>Consult</span>
+      </a>
+      <a href="rutina.html" class="nav-item">
+        <i class="fas fa-hand-holding-water"></i>
+        <span>Skin care</span>
+      </a>
+      <a href="#" class="nav-item">
+        <i class="fas fa-user"></i>
+        <span>Profile</span>
+      </a>
+    </nav>
+  </div>
+
+  <script src="assets/scripts/consult.js"></script>
+</body>
+</html>

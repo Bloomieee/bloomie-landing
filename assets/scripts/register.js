@@ -49,8 +49,8 @@ document.addEventListener('DOMContentLoaded', function() {
       const userData = {
         email: `demo@${provider}.com`,
         provider: provider,
-        firstName: 'Usuario',
-        name: 'Usuario',
+        firstName: 'User',
+        name: 'User',
         loginTime: new Date().toISOString()
       };
       localStorage.setItem('currentUser', JSON.stringify(userData));

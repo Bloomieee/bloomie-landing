@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,10 +14,10 @@
     <div class="dashboard-header">
       <div class="header-top">
           <div class="user-greeting">
-            <img src="https://images.unsplash.com/photo-1494790108755-2616b332c1d2?w=40&h=40&fit=crop&crop=face&q=80" alt="User avatar" class="user-avatar">
+            <img src="assets/images/logo-msize.png" alt="Bloomie" class="user-avatar">
             <div class="greeting-text">
-            <p class="greeting">Buenos días, Usuario</p>
-            <p class="subgreeting">Tu rutina personalizada está lista</p>
+            <p class="greeting">Good morning, User</p>
+            <p class="subgreeting">Your personalized routine is ready</p>
           </div>
         </div>
         
@@ -33,9 +33,9 @@
       
       <div class="scan-card">
         <div class="scan-card-content">
-          <h3>Análisis Facial</h3>
-          <p>Escanea tu rostro para obtener una rutina personalizada</p>
-          <button class="get-started-btn">Comenzar</button>
+          <h3>Face Analysis</h3>
+          <p>Scan your face to get a personalized routine</p>
+          <button class="get-started-btn">Get Started</button>
         </div>
         <div class="scan-card-image">
           <img src="https://via.placeholder.com/60x60?text=📱" alt="Scan">
@@ -51,16 +51,16 @@
           <i class="fas fa-user-md"></i>
         </div>
         <div class="card-content">
-          <h4>Consulta con Dermatólogo</h4>
-          <p class="card-date">Hoy, 2:00 PM</p>
-          <p class="card-doctor">Dr. María González</p>
+          <h4>Consult a Dermatologist</h4>
+          <p class="card-date">Today, 2:00 PM</p>
+          <p class="card-doctor">Dr. Maria Gonzalez</p>
         </div>
       </div>
 
       <!-- Trending Items -->
-      <div class="dashboard-card">
+      <div class="dashboard-card" onclick="window.location.href='trending.html'" style="cursor: pointer;">
         <div class="card-content">
-          <h4>Productos en Tendencia</h4>
+          <h4>Trending Products</h4>
           <div class="trending-items">
             <div class="trending-item">🧴</div>
             <div class="trending-item">🧴</div>
@@ -73,11 +73,11 @@
       <!-- Skin Progress Tracker -->
       <div class="dashboard-card">
         <div class="card-content">
-          <h4>Seguimiento de Progreso</h4>
+          <h4>Progress Tracker</h4>
           <div class="progress-chart">
             <div style="text-align: center; color: #666;">
               <i class="fas fa-chart-line" style="font-size: 24px; margin-bottom: 10px;"></i>
-              <p style="margin: 0; font-size: 12px;">Progreso esta semana</p>
+              <p style="margin: 0; font-size: 12px;">Progress this week</p>
               <p style="margin: 5px 0 0; font-size: 16px; font-weight: 600; color: #333;">85%</p>
             </div>
           </div>
@@ -85,14 +85,27 @@
       </div>
 
       <!-- Nearby Stores -->
-      <div class="dashboard-card">
+      <div class="dashboard-card stores-card" id="storesCard" style="cursor: pointer;">
         <div class="card-content">
-          <h4>Encuentra tu Tienda</h4>
-          <div class="store-map">
+          <h4>Nearby Pharmacies</h4>
+          <div class="store-map" id="storeMapPreview">
             <i class="fas fa-map-marker-alt"></i>
-            <p style="margin: 0; font-size: 12px;">Ver tiendas cercanas</p>
+            <p style="margin: 0; font-size: 12px;">Tap to view map</p>
           </div>
         </div>
+      </div>
+    </div>
+
+    <!-- Map Modal -->
+    <div id="mapModal" class="map-modal" style="display: none;">
+      <div class="map-modal-content">
+        <div class="map-header">
+          <h3>Nearby Pharmacies</h3>
+          <button id="closeMapModal" class="close-map-btn">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <div id="pharmacyMap" class="pharmacy-map"></div>
       </div>
     </div>
 
@@ -100,23 +113,103 @@
     <nav class="bottom-nav">
       <a href="#" class="nav-item active">
         <i class="fas fa-home"></i>
-        <span>Inicio</span>
+        <span>Home</span>
+      </a>
+      <a href="consult.html" class="nav-item">
+        <i class="fas fa-comment-alt"></i>
+        <span>Consult</span>
       </a>
       <a href="rutina.html" class="nav-item">
-        <i class="fas fa-calendar-alt"></i>
-        <span>Rutina</span>
-      </a>
-      <a href="#" class="nav-item">
-        <i class="fas fa-shopping-bag"></i>
-        <span>Tienda</span>
+        <i class="fas fa-hand-holding-water"></i>
+        <span>Skin care</span>
       </a>
       <a href="#" class="nav-item">
         <i class="fas fa-user"></i>
-        <span>Perfil</span>
+        <span>Profile</span>
       </a>
     </nav>
   </div>
   
   <script src="assets/scripts/dashboard.js"></script>
+  <script>
+    // Map functionality
+    document.addEventListener('DOMContentLoaded', function() {
+      const storesCard = document.getElementById('storesCard');
+      const mapModal = document.getElementById('mapModal');
+      const closeMapModal = document.getElementById('closeMapModal');
+      
+      if (storesCard) {
+        storesCard.addEventListener('click', function() {
+          mapModal.style.display = 'flex';
+          initMap();
+        });
+      }
+      
+      if (closeMapModal) {
+        closeMapModal.addEventListener('click', function() {
+          mapModal.style.display = 'none';
+        });
+      }
+      
+      // Close modal on outside click
+      mapModal.addEventListener('click', function(e) {
+        if (e.target === mapModal) {
+          mapModal.style.display = 'none';
+        }
+      });
+    });
+    
+    function initMap() {
+      const mapContainer = document.getElementById('pharmacyMap');
+      
+      // Get user's location
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(
+          function(position) {
+            const lat = position.coords.latitude;
+            const lng = position.coords.longitude;
+            
+            // Create Google Maps embed URL with nearby pharmacies search
+            const mapUrl = `https://www.google.com/maps/embed/v1/search?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=pharmacies+nearby&center=${lat},${lng}&zoom=14`;
+            
+            mapContainer.innerHTML = `
+              <iframe
+                width="100%"
+                height="100%"
+                style="border:0; border-radius: 8px;"
+                loading="lazy"
+                allowfullscreen
+                referrerpolicy="no-referrer-when-downgrade"
+                src="${mapUrl}">
+              </iframe>
+            `;
+          },
+          function(error) {
+            // If location denied, show default map
+            showDefaultMap(mapContainer);
+          }
+        );
+      } else {
+        showDefaultMap(mapContainer);
+      }
+    }
+    
+    function showDefaultMap(container) {
+      // Default to a general location
+      const defaultMapUrl = 'https://www.google.com/maps/embed/v1/search?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=pharmacies&zoom=12';
+      
+      container.innerHTML = `
+        <iframe
+          width="100%"
+          height="100%"
+          style="border:0; border-radius: 8px;"
+          loading="lazy"
+          allowfullscreen
+          referrerpolicy="no-referrer-when-downgrade"
+          src="${defaultMapUrl}">
+        </iframe>
+      `;
+    }
+  </script>
 </body>
 </html>

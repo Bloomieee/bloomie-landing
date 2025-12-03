@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Detail - Bloomie</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles/styles.css" />
+</head>
+<body>
+  <div class="product-detail-container">
+    <!-- Header -->
+    <div class="product-detail-header">
+      <button class="back-btn" onclick="window.history.back()">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+      <h1 class="product-detail-title">Product Details</h1>
+      <button id="favoriteBtn">
+        <i class="far fa-heart"></i>
+      </button>
+    </div>
+
+    <!-- Product Image -->
+    <div class="product-detail-image" id="productImage">
+      <span class="ai-badge" id="aiBadge"><i class="fas fa-sparkles"></i> AI Recommended</span>
+    </div>
+
+    <!-- Product Content -->
+    <div class="product-detail-content">
+      <p id="productBrand">SKIN1004</p>
+      <h1 id="productName">Madagascar Centella Probio-Cica Essence Toner</h1>
+      
+      <p id="productDescription">
+        A refreshing, alcohol-free toner formulated with Centella Asiatica extract to calm irritation, restore the skin barrier, and balance hydration levels. Ideal for sensitive or combination skin types.
+      </p>
+
+      <!-- Compatibility -->
+      <div class="compatibility-section">
+        <div class="compatibility-header">
+          <span>Compatibility with your skin</span>
+          <span id="compatibilityScore">95%</span>
+        </div>
+        <div class="compatibility-bar">
+          <div id="compatibilityFill" style="width: 95%;"></div>
+        </div>
+      </div>
+
+      <!-- Benefits -->
+      <div class="benefits-section">
+        <h4>Key Benefits</h4>
+        <ul id="benefitsList">
+          <li><i class="fas fa-check-circle"></i> Soothes redness and irritation</li>
+          <li><i class="fas fa-check-circle"></i> Strengthens skin's natural moisture barrier</li>
+          <li><i class="fas fa-check-circle"></i> Lightweight hydration without clogging pores</li>
+          <li><i class="fas fa-check-circle"></i> Maintains pH balance for healthy complexion</li>
+        </ul>
+      </div>
+
+      <!-- Suggested Use -->
+      <div class="usage-section">
+        <h4><i class="fas fa-info-circle"></i> Suggested Use</h4>
+        <p id="suggestedUse">
+          Apply evenly over clean skin with your hands or a cotton pad after cleansing, morning and night. Allow full absorption before applying serums or moisturizers.
+        </p>
+      </div>
+    </div>
+
+    <!-- Add to Cart Button -->
+    <div class="add-to-cart-container">
+      <button id="addToCartBtn">Add to Cart</button>
+    </div>
+
+    <!-- Bottom Navigation -->
+    <nav class="bottom-nav">
+      <a href="dashboard.html" class="nav-item">
+        <i class="fas fa-home"></i>
+        <span>Home</span>
+      </a>
+      <a href="consult.html" class="nav-item">
+        <i class="fas fa-comment-alt"></i>
+        <span>Consult</span>
+      </a>
+      <a href="rutina.html" class="nav-item">
+        <i class="fas fa-hand-holding-water"></i>
+        <span>Skin care</span>
+      </a>
+      <a href="profile.html" class="nav-item">
+        <i class="fas fa-user"></i>
+        <span>Profile</span>
+      </a>
+    </nav>
+  </div>
+
+  <script src="assets/scripts/product-detail.js"></script>
+</body>
+</html>

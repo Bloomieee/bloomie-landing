@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trending Items - Bloomie</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles/styles.css" />
+</head>
+<body>
+  <div class="trending-container">
+    <!-- Header -->
+    <div class="trending-header">
+      <button class="back-btn" onclick="window.location.href='dashboard.html'">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+      <h1 class="trending-title">Trending Items</h1>
+      <button class="favorites-link" onclick="window.location.href='favorites.html'">
+        <i class="fas fa-heart"></i>
+      </button>
+    </div>
+
+    <!-- Search Bar -->
+    <div class="trending-search">
+      <div class="search-wrapper">
+        <i class="fas fa-search"></i>
+        <input type="text" id="searchInput" placeholder="Search products...">
+      </div>
+    </div>
+
+    <!-- Products Grid -->
+    <div class="products-grid" id="productsGrid">
+      <!-- Product 1 -->
+      <div class="product-card" data-id="1">
+        <div class="product-image">
+          <img src="assets/images/acid-repair.webp" alt="Hyaluronic Acid Repair Serum">
+          <span class="ai-badge"><i class="fas fa-sparkles"></i> AI</span>
+          <button class="favorite-btn" data-id="1">
+            <i class="far fa-heart"></i>
+          </button>
+        </div>
+        <div class="product-info">
+          <p class="product-brand">La Roche-Posay</p>
+          <p class="product-name">Hyaluronic Acid Repair Serum</p>
+        </div>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="product-card" data-id="2">
+        <div class="product-image">
+          <img src="assets/images/torriden-cica.webp" alt="Balanceful Cica Cream">
+          <button class="favorite-btn" data-id="2">
+            <i class="far fa-heart"></i>
+          </button>
+        </div>
+        <div class="product-info">
+          <p class="product-brand">Torriden</p>
+          <p class="product-name">Balanceful Cica Cream</p>
+        </div>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="product-card" data-id="3">
+        <div class="product-image">
+          <img src="assets/images/purito-moisturizer.png" alt="Post-Acne Moisturizer">
+          <button class="favorite-btn" data-id="3">
+            <i class="far fa-heart"></i>
+          </button>
+        </div>
+        <div class="product-info">
+          <p class="product-brand">PURITO</p>
+          <p class="product-name">Post-Acne Moisturizer</p>
+        </div>
+      </div>
+
+      <!-- Product 4 -->
+      <div class="product-card" data-id="4">
+        <div class="product-image">
+          <img src="assets/images/centella-toner.webp" alt="Madagascar Centella Toner">
+          <span class="ai-badge"><i class="fas fa-sparkles"></i> AI</span>
+          <button class="favorite-btn" data-id="4">
+            <i class="far fa-heart"></i>
+          </button>
+        </div>
+        <div class="product-info">
+          <p class="product-brand">SKIN1004</p>
+          <p class="product-name">Madagascar Centella Toner</p>
+        </div>
+      </div>
+
+      <!-- Product 5 -->
+      <div class="product-card" data-id="5">
+        <div class="product-image">
+          <img src="assets/images/cerave-hydrating.webp" alt="Hydrating Cleanser">
+          <span class="ai-badge"><i class="fas fa-sparkles"></i> AI</span>
+          <button class="favorite-btn" data-id="5">
+            <i class="far fa-heart"></i>
+          </button>
+        </div>
+        <div class="product-info">
+          <p class="product-brand">CeraVe</p>
+          <p class="product-name">Hydrating Cleanser</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Navigation -->
+    <nav class="bottom-nav">
+      <a href="dashboard.html" class="nav-item">
+        <i class="fas fa-home"></i>
+        <span>Home</span>
+      </a>
+      <a href="consult.html" class="nav-item">
+        <i class="fas fa-comment-alt"></i>
+        <span>Consult</span>
+      </a>
+      <a href="rutina.html" class="nav-item">
+        <i class="fas fa-hand-holding-water"></i>
+        <span>Skin care</span>
+      </a>
+      <a href="profile.html" class="nav-item">
+        <i class="fas fa-user"></i>
+        <span>Profile</span>
+      </a>
+    </nav>
+  </div>
+
+  <script src="assets/scripts/trending.js"></script>
+</body>
+</html>
