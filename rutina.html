@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Skincare Routine - Bloomie</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles/styles.css" />
+</head>
+<body>
+  <div class="routine-container">
+    <!-- Header -->
+    <div class="routine-header">
+      <button class="back-btn" onclick="window.history.back()">
+        <i class="fas fa-arrow-left"></i>
+      </button>
+      <h1 class="routine-title">My Skincare Routine</h1>
+      <div class="routine-avatar">
+        <img src="https://images.unsplash.com/photo-1494790108755-2616b332c1d2?w=35&h=35&fit=crop&crop=face&q=80" alt="User avatar">
+      </div>
+    </div>
+
+    <!-- Calendar Days -->
+    <div class="routine-calendar">
+      <div class="calendar-day">1</div>
+      <div class="calendar-day">2</div>
+      <div class="calendar-day active">3</div>
+      <div class="calendar-day">4</div>
+      <div class="calendar-day">5</div>
+    </div>
+
+    <!-- Current Day -->
+    <div class="routine-day">
+      <div class="day-header">
+        <h2>Monday 03</h2>
+        <span class="day-status">AM</span>
+      </div>
+    </div>
+
+    <!-- Routine Steps -->
+    <div class="routine-steps" id="routineSteps">
+      <div class="routine-step morning-step">
+        <div class="step-time">8:00 AM</div>
+        <div class="step-content">
+          <div class="step-icon cleanser">
+            <i class="fas fa-tint"></i>
+          </div>
+          <div class="step-info">
+            <h4>La Roche-Posay Toleriane Hydrating Gentle Face Cleanser</h4>
+            <p>Cleanser</p>
+          </div>
+          <button class="step-expand">
+            <i class="fas fa-chevron-down"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="routine-step morning-step">
+        <div class="step-time">8:30 AM</div>
+        <div class="step-content">
+          <div class="step-icon serum">
+            <i class="fas fa-eye-dropper"></i>
+          </div>
+          <div class="step-info">
+            <h4>The Ordinary Niacinamide 10% + Zinc 1%</h4>
+            <p>Serum</p>
+          </div>
+          <button class="step-expand">
+            <i class="fas fa-chevron-down"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="routine-step evening-step">
+        <div class="step-time">10:00 PM</div>
+        <div class="step-content">
+          <div class="step-icon moisturizer">
+            <i class="fas fa-hand-holding-water"></i>
+          </div>
+          <div class="step-info">
+            <h4>Bioderma Hydrabio Moisturizing Serum</h4>
+            <p>Moisturizer</p>
+          </div>
+          <button class="step-expand">
+            <i class="fas fa-chevron-down"></i>
+          </button>
+        </div>
+        <div class="step-details" style="display:none;">
+          <p>Massage into clean, dry skin. Use twice daily, morning and evening.</p>
+          <p><strong>Amount:</strong> 2-3 drops</p>
+          <p><strong>Frequency:</strong> Twice daily</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Navigation -->
+    <nav class="bottom-nav">
+      <a href="dashboard.html" class="nav-item">
+        <i class="fas fa-home"></i>
+        <span>Home</span>
+      </a>
+      <a href="#" class="nav-item">
+        <i class="fas fa-calendar"></i>
+        <span>Calendar</span>
+      </a>
+      <a href="rutina.html" class="nav-item active">
+        <i class="fas fa-list"></i>
+        <span>My Care</span>
+      </a>
+      <a href="#" class="nav-item">
+        <i class="fas fa-user"></i>
+        <span>Profile</span>
+      </a>
+    </nav>
+
+    <!-- Modal for step details -->
+    <div id="stepModal" class="routine-modal" style="display:none;"></div>
+  </div>
+  
+  <script src="assets/scripts/rutina.js"></script>
+</body>
+</html>

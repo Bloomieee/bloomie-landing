@@ -66,17 +66,33 @@ document.addEventListener('DOMContentLoaded', function() {
                 Login successful! Redirecting...
             </div>
         `;
-        
         loginForm.insertBefore(successDiv, loginForm.firstChild);
-        
         // Simulate redirect after 2 seconds
         setTimeout(() => {
-            window.location.href = 'index.html';
+            // Check if lifestyle questions have been answered
+            if (!localStorage.getItem('bloomie_lifestyle')) {
+                window.location.href = 'lifestyle.html';
+            } else if (!localStorage.getItem('bloomie_scan_completed')) {
+                window.location.href = 'scan.html';
+            } else {
+                window.location.href = 'dashboard.html';
+            }
         }, 2000);
     }
 
     function authenticateUser(email, password) {
-        return mockUsers.find(user => user.email === email && user.password === password);
+        // Check demo users
+        let user = mockUsers.find(user => user.email === email && user.password === password);
+        if (user) return user;
+        // Check registered user in localStorage
+        const regUser = localStorage.getItem('bloomie_user');
+        if (regUser) {
+            const regData = JSON.parse(regUser);
+            if (regData.email === email && regData.password === password) {
+                return regData;
+            }
+        }
+        return null;
     }
 
     // Real-time validation
@@ -153,10 +169,14 @@ document.addEventListener('DOMContentLoaded', function() {
             
             if (user) {
                 // Store user session (in real app, this would be handled by backend)
-                localStorage.setItem('bloomie_user', JSON.stringify({
+                const userData = {
                     email: user.email,
+                    firstName: user.firstName || 'Usuario',
+                    name: user.firstName || 'Usuario',
                     loginTime: new Date().toISOString()
-                }));
+                };
+                localStorage.setItem('bloomie_user', JSON.stringify(userData));
+                localStorage.setItem('currentUser', JSON.stringify(userData));
                 
                 showSuccess();
             } else {
@@ -174,11 +194,15 @@ document.addEventListener('DOMContentLoaded', function() {
     if (googleBtn) {
         googleBtn.addEventListener('click', function() {
             alert('Google login would be implemented here. For demo purposes, this logs you in as demo@example.com');
-            localStorage.setItem('bloomie_user', JSON.stringify({
+            const userData = {
                 email: 'demo@example.com',
+                firstName: 'Usuario',
+                name: 'Usuario',
                 loginTime: new Date().toISOString(),
                 provider: 'google'
-            }));
+            };
+            localStorage.setItem('bloomie_user', JSON.stringify(userData));
+            localStorage.setItem('currentUser', JSON.stringify(userData));
             showSuccess();
         });
     }
@@ -186,16 +210,20 @@ document.addEventListener('DOMContentLoaded', function() {
     if (facebookBtn) {
         facebookBtn.addEventListener('click', function() {
             alert('Facebook login would be implemented here. For demo purposes, this logs you in as demo@example.com');
-            localStorage.setItem('bloomie_user', JSON.stringify({
+            const userData = {
                 email: 'demo@example.com',
+                firstName: 'Usuario',
+                name: 'Usuario',
                 loginTime: new Date().toISOString(),
                 provider: 'facebook'
-            }));
+            };
+            localStorage.setItem('bloomie_user', JSON.stringify(userData));
+            localStorage.setItem('currentUser', JSON.stringify(userData));
             showSuccess();
         });
     }
 
-    // Check if user is already logged in
+    // Check if user is already logged in (but allow staying on login page)
     const existingUser = localStorage.getItem('bloomie_user');
     if (existingUser) {
         const userData = JSON.parse(existingUser);
@@ -203,12 +231,12 @@ document.addEventListener('DOMContentLoaded', function() {
         const now = new Date();
         const hoursDiff = (now - loginTime) / (1000 * 60 * 60);
         
-        // Session expires after 24 hours
-        if (hoursDiff < 24) {
-            window.location.href = 'index.html';
-        } else {
+        // Session expires after 24 hours - just clean up expired sessions
+        if (hoursDiff >= 24) {
             localStorage.removeItem('bloomie_user');
+            localStorage.removeItem('bloomie_lifestyle');
         }
+        // Don't auto-redirect, let user manually log in again if they want
     }
 });
 
@@ -233,5 +261,8 @@ function isUserLoggedIn() {
 // Logout function
 function logout() {
     localStorage.removeItem('bloomie_user');
+    localStorage.removeItem('currentUser');
+    localStorage.removeItem('bloomie_lifestyle');
+    localStorage.removeItem('bloomie_scan_completed');
     window.location.href = 'login.html';
 }
