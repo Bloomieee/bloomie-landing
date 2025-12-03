@@ -1,0 +1,180 @@
+{
+  "nav": {
+    "home": "Home",
+    "features": "Features",
+    "about": "About",
+    "pricing": "Pricing",
+    "contact": "Contact",
+    "login": "Sign In"
+  },
+  "hero": {
+    "title": "Your perfect skincare routine, personalized by AI",
+    "subtitle": "Discover what your skin really needs with smart recommendations, visual tracking, and expert guidance.",
+    "cta": "Start Your Journey"
+  },
+  "market": {
+    "title": "The Future of Skincare is Here",
+    "subtitle": "Join the skincare revolution",
+    "description": "The global skincare market is growing at 5.3% annually, reaching $189.3 billion by 2025. People are seeking personalized solutions that understand their unique skin needs, lifestyle, and goals."
+  },
+  "young_people": {
+    "title": "For the Next Generation of Skincare Enthusiasts",
+    "subtitle": "Skincare made simple and smart",
+    "description": "Young people today want authenticity and results. Bloomie combines cutting-edge AI with dermatological expertise to give you confidence in every product choice and routine decision.",
+    "benefits": {
+      "title": "Why Young People Choose Bloomie:",
+      "items": [
+        "Instant AI-powered skin analysis",
+        "Personalized routines that fit your lifestyle",
+        "Track progress with visual insights",
+        "Connect with certified dermatologists"
+      ]
+    }
+  },
+  "dermatologists": {
+    "title": "Empowering Dermatologists with Smart Technology",
+    "subtitle": "Professional tools for modern dermatology",
+    "description": "Bloomie provides dermatologists with AI-assisted diagnostic tools, patient progress tracking, and evidence-based treatment recommendations to enhance clinical outcomes and patient engagement.",
+    "benefits": {
+      "title": "Professional Benefits:",
+      "items": [
+        "AI-enhanced diagnostic accuracy",
+        "Patient progress monitoring",
+        "Evidence-based treatment protocols",
+        "Improved patient engagement and compliance"
+      ]
+    }
+  },
+  "features": {
+    "title": "Features",
+    "subtitle": "Discover everything Bloomie can do for you",
+    "video_title": "About the Product",
+    "video_subtitle": "See how Bloomie transforms skincare into a personalized experience",
+    "list": [
+      "Get unique recommendations for your skin type based on AI and daily habits.",
+      "Scan your skin with the camera and receive a visual diagnosis that's easy to understand.",
+      "Never forget your routine: clear reminders of when and how to apply each product.",
+      "Access specialists and receive recommendations for reliable products."
+    ],
+    "screenshots": {
+      "title": "See Bloomie in Action",
+      "pharmacy": "Pharmacy Search",
+      "pharmacy_desc": "Find skincare products and nearby pharmacies",
+      "tracker": "Skin Health Tracker",
+      "tracker_desc": "Monitor your progress with visual insights",
+      "appointment": "Appointment Booking",
+      "appointment_desc": "Schedule consultations with dermatologists"
+    }
+  },
+  "about": {
+    "title": "About Us",
+    "subtitle": "The team behind Bloomie",
+    "description": "At Bloomie, we believe that healthy skin builds confidence. That's why our team of young innovators and skincare enthusiasts work together to create a tool that understands you and helps you shine every day.",
+    "video_title": "Meet Our Team",
+    "video_subtitle": "Get to know the passionate minds behind Bloomie's innovation",
+    "team": {
+      "martin": "Co-Founder & CEO",
+      "carla": "Co-Founder & CTO", 
+      "luciana": "Co-Founder & Head of Design",
+      "mario": "Co-Founder & Head of Marketing"
+    }
+  },
+  "contact": {
+    "title": "Join the Bloomie Community",
+    "subtitle": "Transform your skincare journey today",
+    "description": "Ready to discover what your skin really needs? Join thousands of users who trust Bloomie for their daily skincare routine.",
+    "stats": {
+      "users": "25K+",
+      "users_desc": "Active Users",
+      "accuracy": "95%",
+      "accuracy_desc": "Accuracy Rate",
+      "recommendations": "500K+", 
+      "recommendations_desc": "Recommendations"
+    },
+    "info": {
+      "title": "Get in Touch",
+      "email": "hello@bloomie.app",
+      "phone": "+1 (555) 123-4567",
+      "address": "San Francisco, CA"
+    }
+  },
+  "pricing": {
+    "title": "Choose Your Plan",
+    "subtitle": "Simple, transparent pricing for everyone",
+    "free": {
+      "title": "Free",
+      "price": "$0",
+      "period": "/month",
+      "features": [
+        "Basic skin analysis",
+        "Weekly routine recommendations",
+        "Community access",
+        "Limited progress tracking"
+      ],
+      "cta": "Get Started"
+    },
+    "pro": {
+      "title": "Pro",
+      "price": "$9.99",
+      "period": "/month", 
+      "features": [
+        "Advanced AI skin analysis",
+        "Daily personalized routines",
+        "Progress tracking with photos",
+        "Dermatologist consultations",
+        "Premium product recommendations"
+      ],
+      "cta": "Start Free Trial"
+    }
+  },
+  "login": {
+    "title": "Welcome Back",
+    "subtitle": "Sign in to continue your skincare journey",
+    "email_placeholder": "Enter your email",
+    "password_placeholder": "Enter your password",
+    "remember": "Remember me",
+    "forgot": "Forgot password?",
+    "submit": "Sign In",
+    "signup": "Don't have an account? Sign up",
+    "social": {
+      "google": "Continue with Google",
+      "facebook": "Continue with Facebook",
+      "apple": "Continue with Apple"
+    },
+    "hero": {
+      "title": "Your Skin, Perfected",
+      "description": "Join over 25,000 users who trust Bloomie for their daily skincare routine."
+    }
+  },
+  "footer": {
+    "description": "Your AI-powered skincare companion for healthy, glowing skin.",
+    "links": {
+      "company": "Company",
+      "about": "About",
+      "careers": "Careers",
+      "press": "Press",
+      "support": "Support",
+      "help": "Help Center",
+      "contact": "Contact",
+      "legal": "Legal",
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service"
+    },
+    "social": {
+      "facebook": "Follow us on Facebook",
+      "twitter": "Follow us on Twitter", 
+      "instagram": "Follow us on Instagram"
+    },
+    "copyright": "© 2024 Bloomie. All rights reserved."
+  },
+  "accessibility": {
+    "skip_main": "Skip to main content",
+    "skip_nav": "Skip to navigation",
+    "toggle_menu": "Toggle navigation menu",
+    "toggle_contrast": "Toggle high contrast mode",
+    "language_en": "Switch to English",
+    "language_es": "Switch to Spanish",
+    "language_changed_en": "Language changed to English",
+    "video_controls": "Video player controls"
+  }
+}

@@ -1,0 +1,180 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "features": "Características",
+    "about": "Acerca de",
+    "pricing": "Precios",
+    "contact": "Contacto",
+    "login": "Iniciar Sesión"
+  },
+  "hero": {
+    "title": "Tu rutina de cuidado perfecta, personalizada por IA",
+    "subtitle": "Descubre lo que tu piel realmente necesita con recomendaciones inteligentes, seguimiento visual y orientación experta.",
+    "cta": "Comienza Tu Viaje"
+  },
+  "market": {
+    "title": "El Futuro del Cuidado de la Piel Está Aquí",
+    "subtitle": "Únete a la revolución del cuidado de la piel",
+    "description": "El mercado global del cuidado de la piel está creciendo un 5.3% anualmente, alcanzando $189.3 mil millones para 2025. Las personas buscan soluciones personalizadas que entiendan sus necesidades únicas de piel, estilo de vida y objetivos."
+  },
+  "young_people": {
+    "title": "Para la Nueva Generación de Entusiastas del Cuidado de la Piel",
+    "subtitle": "Cuidado de la piel hecho simple e inteligente",
+    "description": "Los jóvenes de hoy quieren autenticidad y resultados. Bloomie combina IA de vanguardia con experiencia dermatológica para darte confianza en cada elección de producto y decisión de rutina.",
+    "benefits": {
+      "title": "Por qué los Jóvenes Eligen Bloomie:",
+      "items": [
+        "Análisis instantáneo de piel con IA",
+        "Rutinas personalizadas que se adaptan a tu estilo de vida",
+        "Rastrea el progreso con insights visuales",
+        "Conéctate con dermatólogos certificados"
+      ]
+    }
+  },
+  "dermatologists": {
+    "title": "Empoderando a los Dermatólogos con Tecnología Inteligente",
+    "subtitle": "Herramientas profesionales para la dermatología moderna",
+    "description": "Bloomie proporciona a los dermatólogos herramientas de diagnóstico asistidas por IA, seguimiento del progreso del paciente y recomendaciones de tratamiento basadas en evidencia para mejorar los resultados clínicos y la participación del paciente.",
+    "benefits": {
+      "title": "Beneficios Profesionales:",
+      "items": [
+        "Precisión diagnóstica mejorada por IA",
+        "Monitoreo del progreso del paciente",
+        "Protocolos de tratamiento basados en evidencia",
+        "Mejor participación y cumplimiento del paciente"
+      ]
+    }
+  },
+  "features": {
+    "title": "Características",
+    "subtitle": "Descubre todo lo que Bloomie puede hacer por ti",
+    "video_title": "Acerca del Producto",
+    "video_subtitle": "Ve cómo Bloomie transforma el cuidado de la piel en una experiencia personalizada",
+    "list": [
+      "Obtén recomendaciones únicas para tu tipo de piel basadas en IA y hábitos diarios.",
+      "Escanea tu piel con la cámara y recibe un diagnóstico visual fácil de entender.",
+      "Nunca olvides tu rutina: recordatorios claros de cuándo y cómo aplicar cada producto.",
+      "Accede a especialistas y recibe recomendaciones de productos confiables."
+    ],
+    "screenshots": {
+      "title": "Ve Bloomie en Acción",
+      "pharmacy": "Búsqueda de Farmacias",
+      "pharmacy_desc": "Encuentra productos de cuidado de la piel y farmacias cercanas",
+      "tracker": "Rastreador de Salud de la Piel",
+      "tracker_desc": "Monitorea tu progreso con insights visuales",
+      "appointment": "Reserva de Citas",
+      "appointment_desc": "Programa consultas con dermatólogos"
+    }
+  },
+  "about": {
+    "title": "Acerca de Nosotros",
+    "subtitle": "El equipo detrás de Bloomie",
+    "description": "En Bloomie, creemos que la piel sana construye confianza. Por eso nuestro equipo de jóvenes innovadores y entusiastas del cuidado de la piel trabajan juntos para crear una herramienta que te entiende y te ayuda a brillar todos los días.",
+    "video_title": "Conoce a Nuestro Equipo",
+    "video_subtitle": "Conoce las mentes apasionadas detrás de la innovación de Bloomie",
+    "team": {
+      "martin": "Co-Fundador y CEO",
+      "carla": "Co-Fundadora y CTO",
+      "luciana": "Co-Fundadora y Jefa de Diseño",
+      "mario": "Co-Fundador y Jefe de Marketing"
+    }
+  },
+  "contact": {
+    "title": "Únete a la Comunidad Bloomie",
+    "subtitle": "Transforma tu viaje de cuidado de la piel hoy",
+    "description": "¿Listo para descubrir lo que tu piel realmente necesita? Únete a miles de usuarios que confían en Bloomie para su rutina diaria de cuidado de la piel.",
+    "stats": {
+      "users": "25K+",
+      "users_desc": "Usuarios Activos",
+      "accuracy": "95%",
+      "accuracy_desc": "Tasa de Precisión",
+      "recommendations": "500K+",
+      "recommendations_desc": "Recomendaciones"
+    },
+    "info": {
+      "title": "Ponte en Contacto",
+      "email": "hello@bloomie.app",
+      "phone": "+1 (555) 123-4567",
+      "address": "San Francisco, CA"
+    }
+  },
+  "pricing": {
+    "title": "Elige Tu Plan",
+    "subtitle": "Precios simples y transparentes para todos",
+    "free": {
+      "title": "Gratis",
+      "price": "$0",
+      "period": "/mes",
+      "features": [
+        "Análisis básico de la piel",
+        "Recomendaciones semanales de rutina",
+        "Acceso a la comunidad",
+        "Seguimiento limitado del progreso"
+      ],
+      "cta": "Comenzar"
+    },
+    "pro": {
+      "title": "Pro",
+      "price": "$9.99",
+      "period": "/mes",
+      "features": [
+        "Análisis avanzado de piel con IA",
+        "Rutinas personalizadas diarias",
+        "Seguimiento del progreso con fotos",
+        "Consultas con dermatólogos",
+        "Recomendaciones premium de productos"
+      ],
+      "cta": "Comenzar Prueba Gratis"
+    }
+  },
+  "login": {
+    "title": "Bienvenido de Vuelta",
+    "subtitle": "Inicia sesión para continuar tu viaje de cuidado de la piel",
+    "email_placeholder": "Ingresa tu email",
+    "password_placeholder": "Ingresa tu contraseña",
+    "remember": "Recordarme",
+    "forgot": "¿Olvidaste tu contraseña?",
+    "submit": "Iniciar Sesión",
+    "signup": "¿No tienes cuenta? Regístrate",
+    "social": {
+      "google": "Continuar con Google",
+      "facebook": "Continuar con Facebook",
+      "apple": "Continuar con Apple"
+    },
+    "hero": {
+      "title": "Tu Piel, Perfeccionada",
+      "description": "Únete a más de 25,000 usuarios que confían en Bloomie para su rutina diaria de cuidado de la piel."
+    }
+  },
+  "footer": {
+    "description": "Tu compañero de cuidado de la piel impulsado por IA para una piel saludable y radiante.",
+    "links": {
+      "company": "Empresa",
+      "about": "Acerca de",
+      "careers": "Carreras",
+      "press": "Prensa",
+      "support": "Soporte",
+      "help": "Centro de Ayuda",
+      "contact": "Contacto",
+      "legal": "Legal",
+      "privacy": "Política de Privacidad",
+      "terms": "Términos de Servicio"
+    },
+    "social": {
+      "facebook": "Síguenos en Facebook",
+      "twitter": "Síguenos en Twitter",
+      "instagram": "Síguenos en Instagram"
+    },
+    "copyright": "© 2024 Bloomie. Todos los derechos reservados."
+  },
+  "accessibility": {
+    "skip_main": "Saltar al contenido principal",
+    "skip_nav": "Saltar a la navegación",
+    "toggle_menu": "Alternar menú de navegación",
+    "toggle_contrast": "Alternar modo de alto contraste",
+    "language_en": "Cambiar a Inglés",
+    "language_es": "Cambiar a Español",
+    "language_changed_es": "Idioma cambiado a Español",
+    "video_controls": "Controles del reproductor de video"
+  }
+}
