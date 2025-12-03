@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notifications - Bloomie</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles/styles.css" />
+</head>
+<body>
+  <div class="notifications-container">
+    <!-- Header -->
+    <div class="notifications-header">
+      <button class="back-btn" onclick="window.history.back()">
+        <i class="fas fa-arrow-left"></i>
+      </button>
+      <h1 class="notifications-title">Notification settings</h1>
+      <div class="header-spacer"></div>
+    </div>
+    
+    <!-- Notification Options -->
+    <div class="notification-options">
+      <div class="notification-item">
+        <div class="notification-info">
+          <span class="notification-name">Appointment reminders</span>
+          <span class="notification-desc">Receive notifications before scheduled appointments</span>
+        </div>
+        <label class="toggle-switch">
+          <input type="checkbox" id="appointmentReminders" checked>
+          <span class="toggle-slider"></span>
+        </label>
+      </div>
+      
+      <div class="reminder-time-group" id="reminderTimeGroup">
+        <label class="form-label">Reminder time</label>
+        <select class="form-input form-select" id="reminderTime">
+          <option value="15">15 minutes before</option>
+          <option value="30" selected>30 minutes before</option>
+          <option value="60">1 hour before</option>
+          <option value="1440">1 day before</option>
+        </select>
+      </div>
+      
+      <div class="notification-item">
+        <div class="notification-info">
+          <span class="notification-name">Daily schedule summary</span>
+          <span class="notification-desc">Get a summary of your routine each morning</span>
+        </div>
+        <label class="toggle-switch">
+          <input type="checkbox" id="dailySummary" checked>
+          <span class="toggle-slider"></span>
+        </label>
+      </div>
+      
+      <div class="notification-item">
+        <div class="notification-info">
+          <span class="notification-name">Product recommendations</span>
+          <span class="notification-desc">Notifications for new personalized products</span>
+        </div>
+        <label class="toggle-switch">
+          <input type="checkbox" id="productRecommendations" checked>
+          <span class="toggle-slider"></span>
+        </label>
+      </div>
+      
+      <div class="notification-item">
+        <div class="notification-info">
+          <span class="notification-name">Skin progress updates</span>
+          <span class="notification-desc">Alerts when you log skin progress</span>
+        </div>
+        <label class="toggle-switch">
+          <input type="checkbox" id="progressUpdates">
+          <span class="toggle-slider"></span>
+        </label>
+      </div>
+      
+      <div class="notification-item">
+        <div class="notification-info">
+          <span class="notification-name">Email notifications</span>
+          <span class="notification-desc">Receive important updates via email</span>
+        </div>
+        <label class="toggle-switch">
+          <input type="checkbox" id="emailNotifications">
+          <span class="toggle-slider"></span>
+        </label>
+      </div>
+    </div>
+    
+    <!-- Save Button -->
+    <div class="notification-actions">
+      <button class="btn-save" id="saveNotifications">Save preferences</button>
+    </div>
+
+    <!-- Bottom Navigation -->
+    <nav class="bottom-nav">
+      <a href="dashboard.html" class="nav-item">
+        <i class="fas fa-home"></i>
+        <span>Home</span>
+      </a>
+      <a href="consult.html" class="nav-item">
+        <i class="fas fa-comment-alt"></i>
+        <span>Consult</span>
+      </a>
+      <a href="rutina.html" class="nav-item">
+        <i class="fas fa-hand-holding-water"></i>
+        <span>Skin care</span>
+      </a>
+      <a href="profile.html" class="nav-item active">
+        <i class="fas fa-user"></i>
+        <span>Profile</span>
+      </a>
+    </nav>
+  </div>
+  
+  <script src="assets/scripts/notifications.js"></script>
+</body>
+</html>
