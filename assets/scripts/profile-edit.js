@@ -1,5 +1,3 @@
-// profile-edit.js: Profile editing functionality
-
 document.addEventListener('DOMContentLoaded', function() {
   loadProfileData();
   setupForm();

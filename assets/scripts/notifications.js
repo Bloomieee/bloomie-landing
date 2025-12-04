@@ -1,5 +1,3 @@
-// notifications.js: Notification settings functionality
-
 document.addEventListener('DOMContentLoaded', function() {
   loadNotificationSettings();
   setupToggleListeners();

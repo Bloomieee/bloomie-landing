@@ -1,5 +1,3 @@
-// scan.js: Face scanning simulation
-
 document.addEventListener('DOMContentLoaded', function() {
   const startScanBtn = document.getElementById('startScanBtn');
   const continueBtn = document.getElementById('continueBtn');
