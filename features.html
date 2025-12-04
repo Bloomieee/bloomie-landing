@@ -89,13 +89,15 @@
     <div class="video-container product-video-section" style="max-width: 900px; width: 100%;">
       <h3 class="heading-3" style="text-align: center;">About the Product</h3>
       <p class="lead" style="text-align: center;">See how Bloomie transforms skincare into a personalized experience.</p>
-      <video class="product-video" controls poster="assets/images/video-poster-product.jpg" aria-label="Bloomie product demonstration video" style="display: block; margin: 0 auto;">
-        <source src="assets/videos/bloomie-product-demo.mp4" type="video/mp4">
-        <source src="assets/videos/bloomie-product-demo.webm" type="video/webm">
-        <track kind="captions" src="assets/videos/product-captions-en.vtt" srclang="en" label="English">
-        <track kind="captions" src="assets/videos/product-captions-es.vtt" srclang="es" label="Español">
-        <p>Your browser does not support the video tag. <a href="assets/videos/bloomie-product-demo.mp4">Download the video</a> to watch it.</p>
-      </video>
+      <div class="video-wrapper">
+        <iframe class="product-video" 
+                src="https://www.youtube.com/embed/jrV3ut3oGDE" 
+                title="Bloomie Product Demo"
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+        </iframe>
+      </div>
     </div>
   </div>
 </section>
