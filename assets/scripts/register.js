@@ -1,5 +1,3 @@
-// register.js: Registration logic with updated form fields
-
 document.addEventListener('DOMContentLoaded', function() {
   const form = document.getElementById('registerForm');
   const successMsg = document.getElementById('registerSuccess');

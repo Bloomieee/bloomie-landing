@@ -1,5 +1,3 @@
-// favorites.js: Favorites page functionality
-
 document.addEventListener('DOMContentLoaded', function() {
     const favoritesGrid = document.getElementById('favoritesGrid');
     const emptyState = document.getElementById('emptyState');

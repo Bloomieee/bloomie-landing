@@ -3284,6 +3284,17 @@ html { scroll-behavior: smooth; }
   border-radius: 12px;
 }
 
+.product-video-section {
+  padding-bottom: 0 !important;
+  height: auto !important;
+  position: static !important;
+}
+
+.product-video-section .video-wrapper {
+  padding-bottom: 180px;
+  max-height: 200px;
+}
+
 @media (max-width: 768px) {
   .video-container {
     margin-bottom: 30px;

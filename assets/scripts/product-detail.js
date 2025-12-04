@@ -1,5 +1,3 @@
-// product-detail.js: Product detail page functionality
-
 document.addEventListener('DOMContentLoaded', function() {
     // Get product ID from URL
     const urlParams = new URLSearchParams(window.location.search);

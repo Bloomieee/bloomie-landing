@@ -1,5 +1,3 @@
-// consult.js: Chat functionality with automated responses
-
 document.addEventListener('DOMContentLoaded', function() {
     const chatInput = document.getElementById('chatInput');
     const sendBtn = document.getElementById('sendBtn');

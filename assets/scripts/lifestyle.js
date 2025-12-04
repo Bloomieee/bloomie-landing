@@ -1,5 +1,3 @@
-// lifestyle.js: Validación y lógica del cuestionario
-
 document.addEventListener('DOMContentLoaded', function() {
   const form = document.getElementById('lifestyleForm');
   const skinHelp = document.getElementById('skinHelp');

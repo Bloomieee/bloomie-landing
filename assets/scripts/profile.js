@@ -1,5 +1,3 @@
-// profile.js: Profile page functionality
-
 document.addEventListener('DOMContentLoaded', function() {
   loadProfileData();
   setupLogout();

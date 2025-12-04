@@ -1,5 +1,3 @@
-// trending.js: Trending products functionality
-
 // Products data
 const products = [
     {
