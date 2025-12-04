@@ -3243,6 +3243,69 @@ html { scroll-behavior: smooth; }
   }
 }
 
+/* ===== VIDEO CONTAINER STYLES ===== */
+.video-container {
+  margin-bottom: 40px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.intro-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+}
+
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.video-wrapper iframe,
+.product-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+}
+
+@media (max-width: 768px) {
+  .video-container {
+    margin-bottom: 30px;
+    border-radius: 12px;
+  }
+  
+  .intro-video {
+    border-radius: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .video-container {
+    margin-bottom: 25px;
+    border-radius: 10px;
+  }
+  
+  .intro-video {
+    border-radius: 10px;
+  }
+}
+
 /* ===== PROFILE PAGE STYLES ===== */
 .profile-container {
   min-height: 100vh;
